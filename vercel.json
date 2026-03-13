@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "https://www.shahpurjat.cafe/:path*",
+      "destination": "https://shahpurjat.cafe/:path*",
+      "permanent": true
+    }
+  ]
+}
