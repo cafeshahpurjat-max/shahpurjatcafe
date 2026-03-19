@@ -205,6 +205,22 @@ height:240px;
 
   // Google Ads
   gtag('config', 'AW-18019764306');
+
+  // Scroll tracking (50%)
+  let scrollTracked = false;
+
+  window.addEventListener('scroll', function() {
+    let scrollPosition = window.scrollY + window.innerHeight;
+    let pageHeight = document.body.scrollHeight;
+
+    if (!scrollTracked && scrollPosition / pageHeight > 0.5) {
+      scrollTracked = true;
+
+      gtag('event', 'scroll_50_percent', {
+        'event_category': 'engagement'
+      });
+    }
+  });
 </script>
 
 </head>
@@ -225,26 +241,6 @@ height:240px;
 <p>A local guide to cafes, coffee shops and work friendly spaces in Shahpur Jat, South Delhi</p>
 
 </header>
-
-<section>
-
-<h2>Exploring Cafes in Shahpur Jat</h2>
-
-<p>
-Shahpur Jat has quietly become one of the most interesting café neighborhoods in South Delhi with several cafes and coffee spots located within walking distance. Visitors searching for the best cafe in Shahpur Jat often explore multiple cafes in the area before choosing their favorite.
-</p>
-
-
-<p>
-Visitors searching for cafes in Shahpur Jat often look for a comfortable cafe where they can sit for coffee, meet friends or work for a few hours.
-</p>
-
-<p>
-The cafés below are listed based on their overall visitor ratings and popularity in Shahpur Jat. Each café offers a slightly different environment ranging from quiet work cafés to coffee stops and coworking spaces.
-</p>
-
-</section>
-
 
 <section id="compare" class="card compare">
 <p>
@@ -644,6 +640,24 @@ quiet cafes in South Delhi
 
 
 <section class="card">
+
+
+<h2>About Cafes in Shahpur Jat</h2>
+
+<p>
+Shahpur Jat has quietly become one of the most interesting café neighborhoods in South Delhi with several cafes and coffee spots located within walking distance. Visitors searching for the best cafe in Shahpur Jat often explore multiple cafes in the area before choosing their favorite.
+</p>
+
+
+<p>
+Visitors searching for cafes in Shahpur Jat often look for a comfortable cafe where they can sit for coffee, meet friends or work for a few hours.
+</p>
+
+<p>
+The cafés below are listed based on their overall visitor ratings and popularity in Shahpur Jat. Each café offers a slightly different environment ranging from quiet work cafés to coffee stops and coworking spaces.
+</p>
+
+
 
 <h2>Why Shahpur Jat Has Become a Café Hub</h2>
 
