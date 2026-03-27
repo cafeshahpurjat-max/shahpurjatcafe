@@ -1,7 +1,13 @@
 {
   "redirects": [
     {
-      "source": "https://www.shahpurjat.cafe/:path*",
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.shahpurjat.cafe"
+        }
+      ],
       "destination": "https://shahpurjat.cafe/:path*",
       "permanent": true
     },
