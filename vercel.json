@@ -1,17 +1,6 @@
 {
   "redirects": [
     {
-      "source": "/:path*",
-      "has": [
-        {
-          "type": "host",
-          "value": "www.shahpurjat.cafe"
-        }
-      ],
-      "destination": "https://shahpurjat.cafe/:path*",
-      "permanent": true
-    },
-    {
       "source": "/creative-cafes-south-delhi.html",
       "destination": "/work-friendly-cafes-south-delhi.html",
       "permanent": true
