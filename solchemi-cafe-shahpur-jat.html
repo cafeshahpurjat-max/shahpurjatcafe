@@ -197,6 +197,7 @@ nav{background:var(--ink);height:var(--nav);padding:0 24px;position:sticky;top:0
 .mi-name{font-size:14px;font-weight:500;color:var(--ink);}
 .mi-desc{font-size:12px;color:var(--ink-m);margin-top:2px;line-height:1.4;}
 .mi-price{font-size:13px;font-weight:500;color:var(--warm);white-space:nowrap;flex-shrink:0;}
+.mi-badge{font-size:10px;font-weight:500;padding:2px 8px;border-radius:99px;background:var(--accent-light);color:var(--accent);border:1px solid #d4e0d4;white-space:nowrap;flex-shrink:0;align-self:flex-start;}
 .menu-note{font-size:13px;color:var(--ink-m);margin-top:12px;font-style:italic;}
 
 /* BOOKING BANNER */
@@ -474,18 +475,18 @@ gtag('config','AW-18019764306');
     <div class="sec-lbl">Menu highlights</div>
     <div class="sec-title">Fresh food &amp; specialty coffee</div>
     <div class="menu-grid">
-      <div class="mi"><div><div class="mi-name">Margherita Tortizza</div><div class="mi-desc">Classic tomato, mozzarella &amp; basil</div></div><span class="mi-price">₹325</span></div>
-      <div class="mi"><div><div class="mi-name">Ortolano Tortizza</div><div class="mi-desc">Bell peppers, zucchini, mozzarella</div></div><span class="mi-price">₹400</span></div>
-      <div class="mi"><div><div class="mi-name">Cafe Latte</div><div class="mi-desc">Espresso, steamed milk, foam</div></div><span class="mi-price">₹275</span></div>
-      <div class="mi"><div><div class="mi-name">Iced Latte — Regular</div><div class="mi-desc">Vanilla ₹325 · Toffee Caramel ₹325</div></div><span class="mi-price">₹300</span></div>
-      <div class="mi"><div><div class="mi-name">Hazelnut Crunch Iced Latte</div><div class="mi-desc">House favourite cold coffee</div></div><span class="mi-price">₹350</span></div>
-      <div class="mi"><div><div class="mi-name">Scrambled / Cloud Eggs</div><div class="mi-desc">Slow-cooked all-day breakfast</div></div><span class="mi-price">₹250</span></div>
-      <div class="mi"><div><div class="mi-name">Shakshuka</div><div class="mi-desc">Poached eggs, tomato &amp; bell pepper sauce</div></div><span class="mi-price">₹300</span></div>
-      <div class="mi"><div><div class="mi-name">Spaghetti Aglio e Olio</div><div class="mi-desc">Garlic, chilli flakes, EVOO</div></div><span class="mi-price">₹300</span></div>
-      <div class="mi"><div><div class="mi-name">Fusilli al Pesto</div><div class="mi-desc">Basil pesto, pine nuts, parmesan</div></div><span class="mi-price">₹375</span></div>
-      <div class="mi"><div><div class="mi-name">Indian Sprout Salad</div><div class="mi-desc">Mungbean sprouts, honey lemon dressing</div></div><span class="mi-price">₹250</span></div>
-      <div class="mi"><div><div class="mi-name">Vada Pao</div><div class="mi-desc">Batata vada in house laadi pao</div></div><span class="mi-price">₹200</span></div>
-      <div class="mi"><div><div class="mi-name">Healing Masala Chai</div><div class="mi-desc">Slow brewed with ginger &amp; cardamom</div></div><span class="mi-price">₹175</span></div>
+      <div class="mi"><div><div class="mi-name">Margherita Tortizza</div><div class="mi-desc">Classic tomato, mozzarella &amp; basil</div></div><div style="display:flex;flex-direction:column;align-items:flex-end;gap:4px;flex-shrink:0;"><span class="mi-badge">Must try</span></div></div>
+      <div class="mi"><div><div class="mi-name">Ortolano Tortizza</div><div class="mi-desc">Bell peppers, zucchini, mozzarella</div></div><div style="display:flex;flex-direction:column;align-items:flex-end;gap:4px;flex-shrink:0;"><span class="mi-badge">Popular</span></div></div>
+      <div class="mi"><div><div class="mi-name">Cafe Latte</div><div class="mi-desc">Espresso, steamed milk, foam</div></div><div style="display:flex;flex-direction:column;align-items:flex-end;gap:4px;flex-shrink:0;"><span class="mi-badge">Classic</span></div></div>
+      <div class="mi"><div><div class="mi-name">Solchemi Latte</div><div class="mi-desc">Lifted with condensed milk — house signature</div></div><div style="display:flex;flex-direction:column;align-items:flex-end;gap:4px;flex-shrink:0;"><span class="mi-badge">Signature</span></div></div>
+      <div class="mi"><div><div class="mi-name">Hazelnut Crunch Iced Latte</div><div class="mi-desc">House favourite cold coffee</div></div><div style="display:flex;flex-direction:column;align-items:flex-end;gap:4px;flex-shrink:0;"><span class="mi-badge">House special</span></div></div>
+      <div class="mi"><div><div class="mi-name">Scrambled / Cloud Eggs</div><div class="mi-desc">Slow-cooked all-day breakfast</div></div><div style="display:flex;flex-direction:column;align-items:flex-end;gap:4px;flex-shrink:0;"><span class="mi-badge">All day</span></div></div>
+      <div class="mi"><div><div class="mi-name">Shakshuka</div><div class="mi-desc">Poached eggs, tomato &amp; bell pepper sauce</div></div><div style="display:flex;flex-direction:column;align-items:flex-end;gap:4px;flex-shrink:0;"><span class="mi-badge">Popular</span></div></div>
+      <div class="mi"><div><div class="mi-name">Fusilli al Pesto</div><div class="mi-desc">Basil pesto, pine nuts, parmesan</div></div><div style="display:flex;flex-direction:column;align-items:flex-end;gap:4px;flex-shrink:0;"><span class="mi-badge">Must try</span></div></div>
+      <div class="mi"><div><div class="mi-name">Spaghetti Aglio e Olio</div><div class="mi-desc">Garlic, chilli flakes, EVOO</div></div><div style="display:flex;flex-direction:column;align-items:flex-end;gap:4px;flex-shrink:0;"><span class="mi-badge">Classic</span></div></div>
+      <div class="mi"><div><div class="mi-name">Indian Sprout Salad</div><div class="mi-desc">Mungbean sprouts, honey lemon dressing</div></div><div style="display:flex;flex-direction:column;align-items:flex-end;gap:4px;flex-shrink:0;"><span class="mi-badge">Fresh pick</span></div></div>
+      <div class="mi"><div><div class="mi-name">Vada Pao</div><div class="mi-desc">Batata vada in house laadi pao</div></div><div style="display:flex;flex-direction:column;align-items:flex-end;gap:4px;flex-shrink:0;"><span class="mi-badge">Street fav</span></div></div>
+      <div class="mi"><div><div class="mi-name">Healing Masala Chai</div><div class="mi-desc">Slow brewed with ginger &amp; cardamom</div></div><div style="display:flex;flex-direction:column;align-items:flex-end;gap:4px;flex-shrink:0;"><span class="mi-badge">Slow sip</span></div></div>
     </div>
     <p class="menu-note">All prices exclude applicable taxes. &nbsp;
       <a href="https://drive.google.com/file/d/1F8pNiH9X4AMFjMje5QYwV5viUjxmlVHR/view" target="_blank" rel="noopener noreferrer" style="color:var(--green);font-weight:500;" onclick="gtag('event','menu_click',{'source':'menu_section'});">View full menu →</a>

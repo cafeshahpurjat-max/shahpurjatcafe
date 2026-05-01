@@ -10,20 +10,26 @@
 
 <url>
 <loc>https://shahpurjat.cafe/work-friendly-cafes-south-delhi.html</loc>
-<lastmod>2026-03-27</lastmod>
+<lastmod>2026-05-01</lastmod>
 <priority>0.8</priority>
 </url>
-
+ 
 <url>
 <loc>https://shahpurjat.cafe/quiet-cafes-south-delhi.html</loc>
-<lastmod>2026-03-27</lastmod>
+<lastmod>2026-05-01</lastmod>
 <priority>0.8</priority>
 </url>
-
+ 
 <url>
 <loc>https://shahpurjat.cafe/solchemi-cafe-shahpur-jat.html</loc>
 <lastmod>2026-05-01</lastmod>
-<priority>0.8</priority>
+<priority>0.9</priority>
+</url>
+ 
+<url>
+<loc>https://shahpurjat.cafe/shack-coffee-shahpur-jat.html</loc>
+<lastmod>2026-05-01</lastmod>
+<priority>0.7</priority>
 </url>
 
 </urlset>
