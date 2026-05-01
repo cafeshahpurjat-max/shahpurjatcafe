@@ -52,7 +52,7 @@
     {"@type":"Question","name":"What is the address of Solchemi?","acceptedAnswer":{"@type":"Answer","text":"110, Fashion Hub Street, behind UCO Bank, Shahpur Jat, New Delhi. Nearest metro: Hauz Khas on the Yellow Line, ~10 min by auto."}},
     {"@type":"Question","name":"What are Solchemi's opening hours?","acceptedAnswer":{"@type":"Answer","text":"Open daily 11:00 AM to 8:30 PM including weekends."}},
     {"@type":"Question","name":"Is Solchemi good for working on a laptop?","acceptedAnswer":{"@type":"Answer","text":"Yes. Free WiFi, comfortable seating and a calm atmosphere make it one of the best work cafes in Shahpur Jat. Many visitors stay 2–3 hours."}},
-    {"@type":"Question","name":"What food does Solchemi serve?","acceptedAnswer":{"@type":"Answer","text":"Signature Tortizzas, salads, breakfast eggs, pasta, sandwiches and desserts. Drinks include specialty espresso, iced lattes and slow-brewed teas. Full menu on District."}},
+    {"@type":"Question","name":"What food does Solchemi serve?","acceptedAnswer":{"@type":"Answer","text":"Signature Tortizzas, salads, breakfast eggs, pasta, sandwiches and desserts. Drinks include specialty espresso, iced lattes and slow-brewed teas. Full menu available at shahpurjat.cafe/solchemi-cafe-shahpur-jat.html"}},
     {"@type":"Question","name":"Is Solchemi a quiet cafe?","acceptedAnswer":{"@type":"Answer","text":"Yes — a calm, quiet cafe in Shahpur Jat with a relaxed pace, ideal for reading, working or spending focused hours."}}
   ]
 }
@@ -170,24 +170,25 @@ nav{background:var(--ink);height:var(--nav);padding:0 24px;position:sticky;top:0
   All have CSS gradient fallbacks so no broken images appear.
 */
 .gal-hero{
-  border-radius:var(--r);overflow:hidden;aspect-ratio:16/7;margin-bottom:8px;
+  border-radius:var(--r);overflow:hidden;aspect-ratio:3/2;margin-bottom:8px;
   background:linear-gradient(135deg,#2d3f2e 0%,#1a1a18 100%);
   position:relative;display:flex;align-items:center;justify-content:center;
 }
-.gal-hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;}
+/* Pull image down to show latte art, not the dark top of the frame */
+.gal-hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 85%;}
 .gal-hero .gal-caption{position:relative;text-align:center;color:rgba(255,255,255,.5);font-size:12px;padding:10px;}
 
 .gal-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;}
 .gal-thumb{
-  border-radius:8px;overflow:hidden;aspect-ratio:4/3;position:relative;
+  border-radius:8px;overflow:hidden;aspect-ratio:3/4;position:relative;
   display:flex;align-items:center;justify-content:center;
 }
 /* each thumb has a unique warm gradient fallback */
 .gt1{background:linear-gradient(135deg,#3a2f2a,#2a1a18);}
 .gt2{background:linear-gradient(135deg,#2a3a2b,#1a2a1b);}
 .gt3{background:linear-gradient(135deg,#3a352a,#2a2518);}
-.gal-thumb img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .3s;}
-.gal-thumb:hover img{transform:scale(1.04);}
+.gal-thumb img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center center;transition:transform .3s;}
+.gal-thumb:hover img{transform:scale(1.03);}
 .gal-thumb .gt-label{position:relative;font-size:11px;color:rgba(255,255,255,.4);text-align:center;padding:6px;}
 
 /* MENU */
@@ -289,8 +290,9 @@ footer a:hover{color:#fff;}
 
   .highlights{grid-template-columns:repeat(2,1fr);}
 
-  .gal-hero{aspect-ratio:16/9;}
+  .gal-hero{aspect-ratio:4/3;}
   .gal-grid{grid-template-columns:1fr 1fr;}
+  .gal-thumb{aspect-ratio:3/4;}
 
   .menu-grid{grid-template-columns:1fr;}
 
@@ -376,6 +378,7 @@ gtag('config','AW-18019764306');
     <a href="#about" class="qpp">Free WiFi ✓</a>
     <a href="#about" class="qpp">Art corner</a>
     <a href="#menu"  class="qpp">Menu &amp; food</a>
+    <a href="https://drive.google.com/file/d/1F8pNiH9X4AMFjMje5QYwV5viUjxmlVHR/view" target="_blank" rel="noopener noreferrer" class="qpp" onclick="gtag('event','menu_click',{'source':'quickpick'});">📋 Full menu</a>
     <a href="#visit" class="qpp">Getting here</a>
     <a href="https://www.district.in/dining/ncr/solchemi-shahpur-jat-new-delhi" target="_blank" rel="noopener noreferrer" class="qpp rd" onclick="gtag('event','district_click',{'source':'quickpick'});">Book table →</a>
     <a href="https://www.google.com/maps/place/Solchemi/data=!4m2!3m1!1s0x0:0x3bbfb7d157d1f952" target="_blank" rel="noopener noreferrer" class="qpp dk">📍 Maps</a>
@@ -422,35 +425,37 @@ gtag('config','AW-18019764306');
   <div class="wrap">
     <div class="sec-lbl">Photos</div>
 
-    <!-- Hero image — solchemi1.webp on live site; gradient shown in preview -->
+    <!-- Hero: solchemi5.webp — latte art + warm cafe interior -->
     <div class="gal-hero">
-      <img src="solchemi1.webp"
-           alt="Solchemi cafe interior — quiet work-friendly cafe in Shahpur Jat, South Delhi"
-           loading="eager" width="960" height="420">
-      <div class="gal-caption">Solchemi interior · Shahpur Jat</div>
+      <img src="solchemi5.webp"
+           alt="Specialty latte at Solchemi — warm cafe interior, Shahpur Jat"
+           loading="eager" width="960" height="720">
+      <div class="gal-caption">Solchemi · Shahpur Jat</div>
     </div>
 
     <div class="gal-grid">
-      <!-- Thumb 1 -->
+      <!-- Work corner -->
       <div class="gal-thumb gt1">
-        <img src="solchemi2.webp" alt="Solchemi cafe seating area Shahpur Jat" loading="lazy" width="320" height="240">
-        <div class="gt-label">Seating &amp; workspace</div>
+        <img src="solchemi-work.webp"
+             alt="Work-friendly seating at Solchemi cafe Shahpur Jat — stay as long as you need"
+             loading="lazy" width="460" height="560">
+        <div class="gt-label">Stay as long as you need</div>
       </div>
-      <!-- Thumb 2 -->
+      <!-- Art corner -->
       <div class="gal-thumb gt2">
-        <img src="solchemi3.webp" alt="Solchemi specialty coffee drinks" loading="lazy" width="320" height="240">
-        <div class="gt-label">Specialty coffee</div>
+        <img src="solchemi-art.webp"
+             alt="Art and drawing corner at Solchemi cafe Shahpur Jat"
+             loading="lazy" width="460" height="560">
+        <div class="gt-label">The drawing corner</div>
       </div>
-      <!-- Thumb 3 — add solchemi-food.webp to repo for Tortizza photo -->
+      <!-- Food -->
       <div class="gal-thumb gt3">
-        <img src="solchemi-food.webp" alt="Solchemi signature Tortizza and fresh food" loading="lazy" width="320" height="240">
-        <div class="gt-label">Tortizza &amp; food</div>
+        <img src="solchemi-food.webp"
+             alt="Solchemi pasta and fresh food Shahpur Jat"
+             loading="lazy" width="460" height="560">
+        <div class="gt-label">Fresh food</div>
       </div>
     </div>
-
-    <p style="font-size:12px;color:var(--ink-f);margin-top:10px;">
-      More photos on <a href="https://instagram.com/solchemi" target="_blank" rel="noopener noreferrer" style="color:var(--green);">@solchemi on Instagram</a>
-    </p>
   </div>
 </div>
 
@@ -470,7 +475,18 @@ gtag('config','AW-18019764306');
       <div class="mi"><div><div class="mi-name">Sandwiches</div><div class="mi-desc">Fresh, filling, good with coffee</div></div><span class="mi-price">₹200</span></div>
       <div class="mi"><div><div class="mi-name">Slow-brewed tea</div><div class="mi-desc">Calm alternative to coffee</div></div><span class="mi-price">₹140</span></div>
     </div>
-    <p class="menu-note">Prices approximate. Full 8-page menu on <a href="https://www.district.in/dining/ncr/solchemi-shahpur-jat-new-delhi" target="_blank" rel="noopener noreferrer" style="color:var(--green);">District</a>.</p>
+    <p class="menu-note">&nbsp;
+      <a href="https://drive.google.com/file/d/1F8pNiH9X4AMFjMje5QYwV5viUjxmlVHR/view" target="_blank" rel="noopener noreferrer" style="color:var(--green);font-weight:500;" onclick="gtag('event','menu_click',{'source':'menu_section'});">View full menu →</a>
+    </p>
+
+    <!-- First visit tip — answers the question inline -->
+    <div style="background:var(--warm-l);border:1px solid #f0d5b8;border-radius:var(--r);padding:16px 20px;margin-top:16px;display:flex;gap:12px;align-items:flex-start;">
+      <div style="font-size:20px;flex-shrink:0;">🍽️</div>
+      <div>
+        <div style="font-size:13px;font-weight:500;color:var(--ink);margin-bottom:5px;">First time at Solchemi? Here's what to order</div>
+        <div style="font-size:13px;color:var(--ink-m);line-height:1.6;">Start with the <strong>signature Tortizza</strong> — Solchemi's most ordered dish. Pair it with a <strong>specialty latte</strong> or an <strong>iced hazelnut coffee</strong>. For a longer stay, add the <strong>pasta</strong>. The <a href="https://drive.google.com/file/d/1F8pNiH9X4AMFjMje5QYwV5viUjxmlVHR/view" target="_blank" rel="noopener noreferrer" style="color:var(--green);font-weight:500;">full menu is here →</a></div>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -499,23 +515,28 @@ gtag('config','AW-18019764306');
       <div class="rev">
         <div class="rev-stars">★★★★★</div>
         <div class="rev-quote">The food was absolutely delicious, with an impressive variety to choose from. The staff and chef were incredibly polite and welcoming. Loved the overall vibe — definitely worth a visit!</div>
-        <div class="rev-meta"><strong>Parul</strong> · 1 month ago · District (5.0 ★)</div>
+        <div class="rev-meta"><strong>Parul</strong> · Google review</div>
       </div>
       <div class="rev">
         <div class="rev-stars">★★★★★</div>
         <div class="rev-quote">Each time we visit the cafe, we are delighted. The food is excellent. I think it is one of the best restaurants in the area.</div>
-        <div class="rev-meta"><strong>Verified visitor</strong> · Sulekha</div>
+        <div class="rev-meta"><strong>Verified visitor</strong> · Google review</div>
       </div>
       <div class="rev">
         <div class="rev-stars">★★★★★</div>
         <div class="rev-quote">From outside it might not appear very pleasing but once you are inside, you will love it. The space completely surprises you.</div>
-        <div class="rev-meta"><strong>Verified visitor</strong> · Sulekha</div>
+        <div class="rev-meta"><strong>Verified visitor</strong> · Google review</div>
       </div>
-      <div class="rev" style="background:var(--green-l);border-color:#d4e0d4;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:8px;">
-        <div style="font-size:28px;">⭐</div>
-        <div style="font-size:14px;font-weight:500;color:var(--ink);">Leave a review</div>
-        <div style="font-size:12px;color:var(--ink-m);">Visited Solchemi? Help others discover it.</div>
-        <a href="https://www.district.in/dining/ncr/solchemi-shahpur-jat-new-delhi" target="_blank" rel="noopener noreferrer" style="font-size:12px;color:var(--green);font-weight:500;text-decoration:underline;">Write on District →</a>
+      <div class="rev" style="background:var(--green-l);border-color:#d4e0d4;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:10px;padding:24px;">
+        <div style="font-size:32px;">⭐ 5.0</div>
+        <div style="font-size:15px;font-weight:500;color:var(--ink);">Rated 5.0 on Google</div>
+        <div style="font-size:12px;color:var(--ink-m);line-height:1.5;">Read all visitor reviews and see photos on Google Maps</div>
+        <a href="https://www.google.com/maps/place/Solchemi/data=!4m2!3m1!1s0x0:0x3bbfb7d157d1f952"
+           target="_blank" rel="noopener noreferrer"
+           style="display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:500;color:#fff;background:#1a73e8;padding:9px 16px;border-radius:7px;text-decoration:none;"
+           onclick="gtag('event','google_reviews_click',{'source':'reviews'});">
+          Read all Google reviews →
+        </a>
       </div>
     </div>
   </div>
@@ -555,8 +576,7 @@ gtag('config','AW-18019764306');
     <div class="cta-row">
       <a href="https://www.district.in/dining/ncr/solchemi-shahpur-jat-new-delhi" target="_blank" rel="noopener noreferrer" class="cbtn cbtn-d" onclick="gtag('event','district_click',{'source':'visit'});">🗓 Book on District</a>
       <a href="https://www.google.com/maps/place/Solchemi/data=!4m2!3m1!1s0x0:0x3bbfb7d157d1f952" target="_blank" rel="noopener noreferrer" class="cbtn cbtn-p" onclick="gtag('event','maps_click',{'source':'visit'});">📍 Open in Maps</a>
-      <a href="tel:+919354644586" class="cbtn cbtn-w" onclick="gtag('event','call_click',{'source':'visit'});">📞 Call Solchemi</a>
-      <a href="https://instagram.com/solchemi" target="_blank" rel="noopener noreferrer" class="cbtn cbtn-s" onclick="gtag('event','instagram_click',{'source':'visit'});">📷 Instagram</a>
+      <a href="tel:+919354644586" class="cbtn cbtn-w" onclick="gtag('event','call_click',{'source':'visit'});">📞 Call</a>
     </div>
   </div>
 </div>
@@ -573,7 +593,7 @@ gtag('config','AW-18019764306');
       <div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">What is the address of Solchemi?</div><div class="faq-a">110, Fashion Hub Street, behind UCO Bank, Shahpur Jat, New Delhi. Nearest metro: Hauz Khas on the Yellow Line, ~10 min by auto.</div></div>
       <div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">What are Solchemi's opening hours?</div><div class="faq-a">Open daily 11:00 AM to 8:30 PM, including weekends. Weekday mornings are quietest for focused work.</div></div>
       <div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Is Solchemi good for working on a laptop?</div><div class="faq-a">Yes — free WiFi, comfortable seating and a calm atmosphere make it one of the best work cafes in Shahpur Jat. Many visitors stay 2–3 hours.</div></div>
-      <div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">What food does Solchemi serve?</div><div class="faq-a">Signature Tortizzas, salads, breakfast eggs, pasta, sandwiches and desserts. Drinks: specialty espresso, iced lattes (vanilla, hazelnut, toffee caramel) and slow-brewed teas. Full 8-page menu on District.</div></div>
+      <div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">What food does Solchemi serve?</div><div class="faq-a">Signature Tortizzas, salads, breakfast eggs, pasta, sandwiches and desserts. Drinks: specialty espresso, iced lattes (vanilla, hazelnut, toffee caramel) and slow-brewed teas. <a href="https://drive.google.com/file/d/1F8pNiH9X4AMFjMje5QYwV5viUjxmlVHR/view" target="_blank" rel="noopener noreferrer" style="color:var(--green);font-weight:500;">View the full menu →</a></div></div>
       <div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Is Solchemi easy to find?</div><div class="faq-a">It's behind UCO Bank on Fashion Hub Street — tucked in the Shahpur Jat lanes, easy to miss from the main road. Once inside, the space opens up beautifully. Use the map above for directions.</div></div>
     </div>
   </div>
