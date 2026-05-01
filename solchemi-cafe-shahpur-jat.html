@@ -278,9 +278,12 @@ footer a:hover{color:#fff;}
 
   .bc{padding:8px 16px;}
 
-  .si{min-width:80px;padding:10px 10px;}
-  .sv{font-size:12px;}
+  .si{min-width:0;padding:8px 6px;flex:1;}
+  .sv{font-size:11px;white-space:normal;word-break:break-word;line-height:1.3;}
   .sl2{font-size:8px;}
+
+  /* Hide last 2 strip items on small screens to prevent overflow */
+  .si:nth-child(5),.si:nth-child(6){display:none;}
 
   .qp{padding:10px 16px;}
 
@@ -290,9 +293,14 @@ footer a:hover{color:#fff;}
 
   .highlights{grid-template-columns:repeat(2,1fr);}
 
+  /* Hero: pull image up more to centre latte cup */
   .gal-hero{aspect-ratio:4/3;}
-  .gal-grid{grid-template-columns:1fr 1fr;}
+  .gal-hero img{object-position:center 75%;}
+
+  /* Gallery: 2 cols, food image full width below */
+  .gal-grid{grid-template-columns:1fr 1fr;grid-template-rows:auto auto;}
   .gal-thumb{aspect-ratio:3/4;}
+  .gal-thumb:last-child{grid-column:1 / -1;aspect-ratio:16/9;}
 
   .menu-grid{grid-template-columns:1fr;}
 
@@ -365,7 +373,7 @@ gtag('config','AW-18019764306');
   <div class="si"><span class="sv g">5.0 ★</span><span class="sl2">Google rating</span></div>
   <div class="si"><span class="sv">11am – 8:30pm</span><span class="sl2">Open daily</span></div>
   <div class="si"><span class="sv g">Free WiFi ✓</span><span class="sl2">Amenities</span></div>
-  <div class="si"><span class="sv">₹1,200</span><span class="sl2">For two</span></div>
+  <div class="si"><span class="sv">₹800–1,200</span><span class="sl2">For two</span></div>
   <div class="si"><span class="sv r">15% OFF</span><span class="sl2">On District</span></div>
   <div class="si"><span class="sv">Shahpur Jat</span><span class="sl2">South Delhi</span></div>
 </div>
@@ -466,16 +474,20 @@ gtag('config','AW-18019764306');
     <div class="sec-lbl">Menu highlights</div>
     <div class="sec-title">Fresh food &amp; specialty coffee</div>
     <div class="menu-grid">
-      <div class="mi"><div><div class="mi-name">Signature Tortizza</div><div class="mi-desc">Solchemi's original flatbread</div></div><span class="mi-price">₹280</span></div>
-      <div class="mi"><div><div class="mi-name">Specialty latte</div><div class="mi-desc">Hot espresso, regular or flavoured</div></div><span class="mi-price">₹180</span></div>
-      <div class="mi"><div><div class="mi-name">Iced latte</div><div class="mi-desc">Vanilla · Hazelnut · Toffee caramel</div></div><span class="mi-price">₹200</span></div>
-      <div class="mi"><div><div class="mi-name">Seasonal salad</div><div class="mi-desc">Fresh, vibrant, made daily</div></div><span class="mi-price">₹240</span></div>
-      <div class="mi"><div><div class="mi-name">Eggs &amp; toast</div><div class="mi-desc">Breakfast any time</div></div><span class="mi-price">₹220</span></div>
-      <div class="mi"><div><div class="mi-name">Pasta</div><div class="mi-desc">Comfort food, house recipe</div></div><span class="mi-price">₹260</span></div>
-      <div class="mi"><div><div class="mi-name">Sandwiches</div><div class="mi-desc">Fresh, filling, good with coffee</div></div><span class="mi-price">₹200</span></div>
-      <div class="mi"><div><div class="mi-name">Slow-brewed tea</div><div class="mi-desc">Calm alternative to coffee</div></div><span class="mi-price">₹140</span></div>
+      <div class="mi"><div><div class="mi-name">Margherita Tortizza</div><div class="mi-desc">Classic tomato, mozzarella &amp; basil</div></div><span class="mi-price">₹325</span></div>
+      <div class="mi"><div><div class="mi-name">Ortolano Tortizza</div><div class="mi-desc">Bell peppers, zucchini, mozzarella</div></div><span class="mi-price">₹400</span></div>
+      <div class="mi"><div><div class="mi-name">Cafe Latte</div><div class="mi-desc">Espresso, steamed milk, foam</div></div><span class="mi-price">₹275</span></div>
+      <div class="mi"><div><div class="mi-name">Iced Latte — Regular</div><div class="mi-desc">Vanilla ₹325 · Toffee Caramel ₹325</div></div><span class="mi-price">₹300</span></div>
+      <div class="mi"><div><div class="mi-name">Hazelnut Crunch Iced Latte</div><div class="mi-desc">House favourite cold coffee</div></div><span class="mi-price">₹350</span></div>
+      <div class="mi"><div><div class="mi-name">Scrambled / Cloud Eggs</div><div class="mi-desc">Slow-cooked all-day breakfast</div></div><span class="mi-price">₹250</span></div>
+      <div class="mi"><div><div class="mi-name">Shakshuka</div><div class="mi-desc">Poached eggs, tomato &amp; bell pepper sauce</div></div><span class="mi-price">₹300</span></div>
+      <div class="mi"><div><div class="mi-name">Spaghetti Aglio e Olio</div><div class="mi-desc">Garlic, chilli flakes, EVOO</div></div><span class="mi-price">₹300</span></div>
+      <div class="mi"><div><div class="mi-name">Fusilli al Pesto</div><div class="mi-desc">Basil pesto, pine nuts, parmesan</div></div><span class="mi-price">₹375</span></div>
+      <div class="mi"><div><div class="mi-name">Indian Sprout Salad</div><div class="mi-desc">Mungbean sprouts, honey lemon dressing</div></div><span class="mi-price">₹250</span></div>
+      <div class="mi"><div><div class="mi-name">Vada Pao</div><div class="mi-desc">Batata vada in house laadi pao</div></div><span class="mi-price">₹200</span></div>
+      <div class="mi"><div><div class="mi-name">Healing Masala Chai</div><div class="mi-desc">Slow brewed with ginger &amp; cardamom</div></div><span class="mi-price">₹175</span></div>
     </div>
-    <p class="menu-note">&nbsp;
+    <p class="menu-note">All prices exclude applicable taxes. &nbsp;
       <a href="https://drive.google.com/file/d/1F8pNiH9X4AMFjMje5QYwV5viUjxmlVHR/view" target="_blank" rel="noopener noreferrer" style="color:var(--green);font-weight:500;" onclick="gtag('event','menu_click',{'source':'menu_section'});">View full menu →</a>
     </p>
 
