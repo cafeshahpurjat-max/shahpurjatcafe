@@ -70,6 +70,7 @@ nav{background:var(--ink);height:var(--nav);padding:0 24px;position:sticky;top:0
 .hcta:hover{opacity:.88;}
 .hcta-maps{background:var(--ink);color:#fff;}
 .hcta-ig{background:rgba(255,255,255,.14);color:#fff;border:1px solid rgba(255,255,255,.25);}
+.hcta-wa{background:#25D366;color:#fff;}
 .strip{background:var(--card);border-bottom:1px solid var(--border);display:flex;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;}
 .strip::-webkit-scrollbar{display:none;}
 .si{flex:1;min-width:90px;padding:11px 14px;border-right:1px solid var(--border);text-align:center;white-space:nowrap;}
@@ -112,6 +113,7 @@ nav{background:var(--ink);height:var(--nav);padding:0 24px;position:sticky;top:0
 .cbtn{display:inline-flex;align-items:center;gap:7px;padding:10px 18px;border-radius:8px;font-size:13px;font-weight:500;text-decoration:none;transition:opacity .15s;border:1px solid transparent;}
 .cbtn:hover{opacity:.85;}
 .cbtn-p{background:var(--ink);color:#fff;}
+.cbtn-w{background:#25D366;color:#fff;}
 .cbtn-s{background:var(--card);color:var(--ink);border-color:var(--border);}
 .faq-item{border-bottom:1px solid var(--border);}
 .faq-item:last-child{border-bottom:none;}
@@ -180,6 +182,7 @@ footer a:hover{color:#fff;}
     <p class="hero-sub">Small coffee cafe · First floor spot · Good for a short break</p>
     <div class="hero-ctas">
       <a href="https://www.google.com/maps/search/Alayna+Cafe+39+Siri+Fort+Shahpur+Jat" target="_blank" rel="noopener noreferrer" class="hcta hcta-maps">📍 Directions</a>
+      <a href="tel:+919217045511" class="hcta hcta-wa" onclick="gtag('event','call_click',{'cafe':'alayna','source':'hero'});">📞 Call</a>
       <a href="https://instagram.com/thealaynacafe" target="_blank" rel="noopener noreferrer" class="hcta hcta-ig">📷 @thealaynacafe</a>
     </div>
   </div>
@@ -253,7 +256,7 @@ footer a:hover{color:#fff;}
       <div class="vc"><div class="vc-lbl">Opens</div><div class="vc-val">9:45am</div><div class="vc-sub">Daily — check Instagram for hours</div></div>
       <div class="vc"><div class="vc-lbl">Address</div><div class="vc-val">First Floor, 39</div><div class="vc-sub">Siri Fort, Shahpur Jat</div></div>
       <div class="vc"><div class="vc-lbl">Nearest metro</div><div class="vc-val">Hauz Khas</div><div class="vc-sub">Yellow Line · ~10 min by auto</div></div>
-      <div class="vc"><div class="vc-lbl">Menu focus</div><div class="vc-val">Coffee &amp; light bites</div><div class="vc-sub">Not a full-meal cafe</div></div>
+      <div class="vc"><div class="vc-lbl">Phone</div><div class="vc-val"><a href="tel:+919217045511" style="color:var(--ink);text-decoration:none;">+91 92170 45511</a></div><div class="vc-sub">Call to confirm hours</div></div>
       <div class="vc"><div class="vc-lbl">Floor</div><div class="vc-val">First floor</div><div class="vc-sub">Up the stairs — easy to miss</div></div>
       <div class="vc"><div class="vc-lbl">Instagram</div><div class="vc-val"><a href="https://instagram.com/thealaynacafe" target="_blank" rel="noopener noreferrer" style="color:var(--accent);text-decoration:none;">@thealaynacafe</a></div><div class="vc-sub">Latest updates</div></div>
     </div>
@@ -266,6 +269,7 @@ footer a:hover{color:#fff;}
     </div>
     <div class="cta-row">
       <a href="https://www.google.com/maps/search/Alayna+Cafe+39+Siri+Fort+Shahpur+Jat" target="_blank" rel="noopener noreferrer" class="cbtn cbtn-p">📍 Open in Maps</a>
+      <a href="tel:+919217045511" class="cbtn cbtn-w" onclick="gtag('event','call_click',{'cafe':'alayna','source':'visit'});">📞 Call</a>
       <a href="https://instagram.com/thealaynacafe" target="_blank" rel="noopener noreferrer" class="cbtn cbtn-s">📷 @thealaynacafe</a>
     </div>
   </div>
@@ -278,7 +282,7 @@ footer a:hover{color:#fff;}
     <div class="sec-title">Common questions</div>
     <div class="faq-list">
       <div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">What is Alayna Cafe good for?</div><div class="faq-a">Alayna is best for a quick coffee break while exploring Shahpur Jat. It is a small, coffee-focused cafe with limited seating — better suited for a short stop than a longer session. If you need to sit for a few hours, work on a laptop or have a full meal, other cafes in the area are better suited.</div></div>
-      <div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Does Alayna Cafe have food?</div><div class="faq-a">Alayna's menu is primarily coffee-focused with limited food options. It is not a full-meal cafe. For a proper food menu with salads, pasta, eggs and Tortizzas, Solchemi at 110 Fashion Hub Street nearby has a full kitchen.</div></div>
+      <div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Does Alayna Cafe have food?</div><div class="faq-a">Alayna's menu is primarily coffee-focused with limited food options. It is not a full-meal cafe. Several cafes in Shahpur Jat serve proper meals — check the <a href="/" style="color:#3d5a3e;">full guide</a> for options that match what you're looking for.</div></div>
       <div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Is Alayna good for working on a laptop?</div><div class="faq-a">Not really — Alayna is a small cafe with limited seating, not designed for long work sessions. For laptop work in Shahpur Jat, <a href="/solchemi-cafe-shahpur-jat.html" style="color:#3d5a3e;">Solchemi</a> (free WiFi, full food menu) or <a href="/shack-coffee-shahpur-jat.html" style="color:#3d5a3e;">Shack Coffee</a> (shorter sessions) are better options nearby.</div></div>
       <div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Where is Alayna Cafe?</div><div class="faq-a">First Floor, 39, Siri Fort, Shahpur Jat, New Delhi. It is on the first floor — look for the staircase on the lane. Nearest metro is Hauz Khas on the Yellow Line.</div></div>
     </div>

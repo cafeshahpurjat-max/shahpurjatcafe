@@ -70,6 +70,7 @@ nav{background:var(--ink);height:var(--nav);padding:0 24px;position:sticky;top:0
 .hcta:hover{opacity:.88;}
 .hcta-maps{background:var(--ink);color:#fff;}
 .hcta-ig{background:rgba(255,255,255,.14);color:#fff;border:1px solid rgba(255,255,255,.25);}
+.hcta-wa{background:#25D366;color:#fff;}
 .strip{background:var(--card);border-bottom:1px solid var(--border);display:flex;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;}
 .strip::-webkit-scrollbar{display:none;}
 .si{flex:1;min-width:90px;padding:11px 14px;border-right:1px solid var(--border);text-align:center;white-space:nowrap;}
@@ -108,6 +109,7 @@ nav{background:var(--ink);height:var(--nav);padding:0 24px;position:sticky;top:0
 .cbtn{display:inline-flex;align-items:center;gap:7px;padding:10px 18px;border-radius:8px;font-size:13px;font-weight:500;text-decoration:none;transition:opacity .15s;border:1px solid transparent;}
 .cbtn:hover{opacity:.85;}
 .cbtn-p{background:var(--ink);color:#fff;}
+.cbtn-w{background:#25D366;color:#fff;}
 .cbtn-s{background:var(--card);color:var(--ink);border-color:var(--border);}
 .faq-item{border-bottom:1px solid var(--border);}
 .faq-item:last-child{border-bottom:none;}
@@ -176,6 +178,7 @@ footer a:hover{color:#fff;}
     <p class="hero-sub">Two-floor cafe · Good cappuccino · Relaxed short visit</p>
     <div class="hero-ctas">
       <a href="https://www.google.com/maps/search/USCO+Cafe+Shop+4+Siri+Fort+Shahpur+Jat" target="_blank" rel="noopener noreferrer" class="hcta hcta-maps">📍 Directions</a>
+      <a href="tel:+918448225163" class="hcta hcta-wa" onclick="gtag('event','call_click',{'cafe':'usco','source':'hero'});">📞 Call</a>
       <a href="https://instagram.com/uscocafe" target="_blank" rel="noopener noreferrer" class="hcta hcta-ig">📷 @uscocafe</a>
     </div>
   </div>
@@ -249,8 +252,8 @@ footer a:hover{color:#fff;}
       <div class="vc"><div class="vc-lbl">Hours</div><div class="vc-val">10am – 8pm</div><div class="vc-sub">Open daily</div></div>
       <div class="vc"><div class="vc-lbl">Address</div><div class="vc-val">Shop Number 4</div><div class="vc-sub">Siri Fort, Shahpur Jat</div></div>
       <div class="vc"><div class="vc-lbl">Nearest metro</div><div class="vc-val">Hauz Khas</div><div class="vc-sub">Yellow Line · ~10 min</div></div>
+      <div class="vc"><div class="vc-lbl">Phone</div><div class="vc-val"><a href="tel:+918448225163" style="color:var(--ink);text-decoration:none;">+91 84482 25163</a></div><div class="vc-sub">Owner: Jasjit</div></div>
       <div class="vc"><div class="vc-lbl">Price for two</div><div class="vc-val">₹650</div><div class="vc-sub">Very affordable</div></div>
-      <div class="vc"><div class="vc-lbl">Owner</div><div class="vc-val">Jasjit</div><div class="vc-sub">Warm, attentive host</div></div>
       <div class="vc"><div class="vc-lbl">Instagram</div><div class="vc-val"><a href="https://instagram.com/uscocafe" target="_blank" rel="noopener noreferrer" style="color:var(--accent);text-decoration:none;">@uscocafe</a></div><div class="vc-sub">Latest updates</div></div>
     </div>
     <div class="tip-box">
@@ -262,6 +265,7 @@ footer a:hover{color:#fff;}
     </div>
     <div class="cta-row">
       <a href="https://www.google.com/maps/search/USCO+Cafe+Shop+4+Siri+Fort+Shahpur+Jat" target="_blank" rel="noopener noreferrer" class="cbtn cbtn-p">📍 Open in Maps</a>
+      <a href="tel:+918448225163" class="cbtn cbtn-w" onclick="gtag('event','call_click',{'cafe':'usco','source':'visit'});">📞 Call</a>
       <a href="https://instagram.com/uscocafe" target="_blank" rel="noopener noreferrer" class="cbtn cbtn-s">📷 @uscocafe</a>
     </div>
   </div>
