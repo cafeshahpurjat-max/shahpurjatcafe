@@ -4,8 +4,14 @@
 
 <url>
 <loc>https://shahpurjat.cafe/</loc>
-<lastmod>2026-03-27</lastmod>
+<lastmod>2026-05-02</lastmod>
 <priority>1.0</priority>
+</url>
+
+<url>
+<loc>https://shahpurjat.cafe/solchemi-cafe-shahpur-jat.html</loc>
+<lastmod>2026-05-02</lastmod>
+<priority>0.9</priority>
 </url>
 
 <url>
@@ -13,23 +19,29 @@
 <lastmod>2026-05-01</lastmod>
 <priority>0.8</priority>
 </url>
- 
+
 <url>
 <loc>https://shahpurjat.cafe/quiet-cafes-south-delhi.html</loc>
 <lastmod>2026-05-01</lastmod>
 <priority>0.8</priority>
 </url>
- 
-<url>
-<loc>https://shahpurjat.cafe/solchemi-cafe-shahpur-jat.html</loc>
-<lastmod>2026-05-01</lastmod>
-<priority>0.9</priority>
-</url>
- 
+
 <url>
 <loc>https://shahpurjat.cafe/shack-coffee-shahpur-jat.html</loc>
-<lastmod>2026-05-01</lastmod>
+<lastmod>2026-05-02</lastmod>
 <priority>0.7</priority>
+</url>
+
+<url>
+<loc>https://shahpurjat.cafe/alayna-cafe-shahpur-jat.html</loc>
+<lastmod>2026-05-02</lastmod>
+<priority>0.6</priority>
+</url>
+
+<url>
+<loc>https://shahpurjat.cafe/usco-cafe-shahpur-jat.html</loc>
+<lastmod>2026-05-02</lastmod>
+<priority>0.6</priority>
 </url>
 
 </urlset>
