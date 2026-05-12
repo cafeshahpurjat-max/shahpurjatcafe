@@ -349,20 +349,11 @@ gtag('config','AW-18019764306');
 <!-- NAV -->
 <nav>
   <a href="/" class="nav-brand">☕ Shahpur Jat Cafe Guide</a>
-  <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu">&#9776;</button>
   <div class="nav-links">
-    <a href="/">All cafes</a>
-    <a href="/work-friendly-cafes-south-delhi.html">Work-friendly</a>
-    <a href="/quiet-cafes-south-delhi.html">Quiet cafes</a>
-    <a href="/#compare">Compare</a>
     <a href="https://www.district.in/dining/ncr/solchemi-shahpur-jat-new-delhi" target="_blank" rel="noopener noreferrer" class="nav-book" onclick="gtag('event','district_click',{'source':'nav'});">Book a table</a>
   </div>
 </nav>
 
-<!-- BREADCRUMB -->
-<div class="bc">
-  <a href="/">Cafes in Shahpur Jat</a><span>›</span>Solchemi
-</div>
 
 <!-- HERO -->
 <div class="hero">
@@ -387,9 +378,9 @@ gtag('config','AW-18019764306');
   <span class="qp-lbl">I want</span>
   <div class="qp-pills">
     <a href="#photos" class="qpp">Photos</a>
-    <a href="#about" class="qpp">Art corner</a>
-    <a href="#about" class="qpp">Quiet work cafe</a>
-    <a href="https://drive.google.com/file/d/1F8pNiH9X4AMFjMje5QYwV5viUjxmlVHR/view" target="_blank" rel="noopener noreferrer" class="qpp" onclick="gtag('event','menu_click',{'source':'quickpick'});">📋 Full menu</a>
+    <a href="#artcorner" class="qpp">Art corner</a>
+    <a href="#artcorner" class="qpp">Quiet work cafe</a>
+    <a href="#reviews" class="qpp">Read reviews</a>
     <a href="https://www.google.com/maps/place/Solchemi/data=!4m2!3m1!1s0x0:0x3bbfb7d157d1f952" target="_blank" rel="noopener noreferrer" class="qpp dk">📍 Maps</a>
   </div>
 </div>
@@ -399,16 +390,19 @@ gtag('config','AW-18019764306');
 <div id="about" class="sec">
   <div class="wrap">
     <div class="sec-lbl">About Solchemi</div>
-    <div class="sec-title">A cafe built for staying — good food, good coffee, no rush</div>
+    <div class="sec-title">Soul + Alchemy — come as you are, leave a little lighter</div>
 
     <p class="about-lead">
-      Solchemi is a <strong>cozy, work-friendly cafe</strong> in Shahpur Jat — tucked in the lanes behind UCO Bank. <strong>5.0 on Google</strong>, free WiFi, and a pace that doesn't rush you out. Good for work, a long lunch, or just sitting with a coffee.
+      Solchemi is <strong>Soul + Alchemy</strong> — born from the kind of place we were searching for ourselves. A cafe in Shahpur Jat where you can sit for hours without being hurried. Not timed. Not pressured. <strong>5.0 on Google</strong>, free WiFi, and food that's honest and made with care.
     </p>
     <p class="about-lead2">
-      The food is fresh and made in-house — <strong>Tortizzas</strong>, pasta, cloud eggs, Vada Pao and good coffee. There's also a <strong>reading and painting corner</strong> with supplies available, open to anyone who walks in.
+      Read, write, paint, work — or simply be. The kitchen serves fresh, thoughtful dishes: <strong>Tortizzas</strong>, pasta, cloud eggs, Vada Pao and good coffee. There's a <strong>reading and painting corner</strong> open to anyone who walks in. No noise. No rush. Just comfort, clarity and room to breathe.
     </p>
 
-    <div class="highlights">
+    <!-- Pull quote from brand story -->
+    <div style="margin-top:28px;border-left:3px solid var(--green);padding:12px 20px;background:#f8f6f2;border-radius:0 8px 8px 0;">
+      <p style="font-size:14px;color:var(--ink-m);line-height:1.7;margin:0;font-style:italic;">"Soul is who you are when you arrive. Alchemy is the subtle shift that happens while you're here."</p>
+    </div>
       <div class="hl"><div class="hl-icon">💻</div><div class="hl-title">Work-friendly</div><div class="hl-sub">Free WiFi · comfortable seating · long stay welcome</div></div>
       <div class="hl"><div class="hl-icon">🎨</div><div class="hl-title">Art corner</div><div class="hl-sub">Canvas &amp; brushes available · reading nook</div></div>
       <div class="hl"><div class="hl-icon">☕</div><div class="hl-title">Specialty coffee</div><div class="hl-sub">Espresso · iced lattes · slow-brewed teas</div></div>
@@ -420,7 +414,28 @@ gtag('config','AW-18019764306');
 
 
 <!-- GALLERY -->
-<div class="sec">
+<!-- ART CORNER + WORK FRIENDLY SECTIONS -->
+<div class="sec" id="artcorner" style="padding-bottom:0;">
+  <div class="wrap">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
+      <!-- Art corner -->
+      <div style="background:#faf8f5;border-radius:12px;padding:24px;">
+        <div style="font-size:22px;margin-bottom:8px;">🎨</div>
+        <div style="font-size:16px;font-weight:600;color:var(--ink);margin-bottom:8px;">Art corner</div>
+        <p style="font-size:14px;color:var(--ink-m);line-height:1.6;margin:0;">Canvas sheets, pastel markers and brushes are kept out for anyone to use — no booking, no extra charge. Just pick up and draw while your coffee cools. Guests have left behind some beautiful work.</p>
+      </div>
+      <!-- Work friendly -->
+      <div style="background:#faf8f5;border-radius:12px;padding:24px;">
+        <div style="font-size:22px;margin-bottom:8px;">💻</div>
+        <div style="font-size:16px;font-weight:600;color:var(--ink);margin-bottom:8px;">Work-friendly</div>
+        <p style="font-size:14px;color:var(--ink-m);line-height:1.6;margin:0;">Free WiFi, comfortable chairs and a pace that doesn't rush you. No one's watching the clock. Freelancers and remote workers often stay 2–3 hours — it's designed for that.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- PHOTOS -->
+<div class="sec" id="photos">
   <div class="wrap">
     <div class="sec-lbl">Photos</div>
 
@@ -491,7 +506,7 @@ gtag('config','AW-18019764306');
 <div id="menu" class="sec">
   <div class="wrap">
     <div class="sec-lbl">Menu highlights</div>
-    <div class="sec-title">Fresh food &amp; specialty coffee</div>
+    <div class="sec-title">Comfort crafted gently</div>
     <div class="menu-grid">
       <div class="mi"><div><div class="mi-name">Margherita Tortizza</div><div class="mi-desc">Classic tomato, mozzarella &amp; basil</div></div><div style="display:flex;flex-direction:column;align-items:flex-end;gap:4px;flex-shrink:0;"><span class="mi-badge">Must try</span></div></div>
       <div class="mi"><div><div class="mi-name">Ortolano Tortizza</div><div class="mi-desc">Bell peppers, zucchini, mozzarella</div></div><div style="display:flex;flex-direction:column;align-items:flex-end;gap:4px;flex-shrink:0;"><span class="mi-badge">Popular</span></div></div>
@@ -524,7 +539,7 @@ gtag('config','AW-18019764306');
 
 
 <!-- REVIEWS -->
-<div class="sec">
+<div class="sec" id="reviews">
   <div class="wrap">
     <div class="sec-lbl">What visitors say</div>
     <div class="sec-title">Guest reviews</div>
@@ -580,7 +595,7 @@ gtag('config','AW-18019764306');
       <a href="https://www.district.in/dining/ncr/solchemi-shahpur-jat-new-delhi" target="_blank" rel="noopener noreferrer"
          style="display:inline-flex;align-items:center;gap:8px;background:var(--red);color:#fff;font-size:13px;font-weight:500;padding:11px 22px;border-radius:7px;text-decoration:none;white-space:nowrap;flex-shrink:0;"
          onclick="gtag('event','district_click',{'source':'reviews_bottom'});">
-        Reserve on District
+        Reserve on District — 15% off
       </a>
     </div>
   </div>
