@@ -333,6 +333,32 @@ footer a:hover{color:#fff;}
   .highlights{grid-template-columns:1fr 1fr;}
   .visit-cards{grid-template-columns:1fr;}
 }
+/* MOBILE STICKY BOTTOM BAR */
+@media(max-width:600px){
+  .mobile-sticky{
+    display:flex;
+    position:fixed;
+    bottom:0;left:0;right:0;
+    background:#fff;
+    border-top:1px solid rgba(0,0,0,.1);
+    padding:12px 16px;
+    gap:10px;
+    z-index:300;
+    box-shadow:0 -4px 16px rgba(0,0,0,.08);
+  }
+  .mobile-sticky a{
+    flex:1;
+    text-align:center;
+    padding:12px;
+    border-radius:8px;
+    font-size:14px;
+    font-weight:600;
+    text-decoration:none;
+  }
+  .mobile-sticky .ms-book{background:var(--red);color:#fff;}
+  .mobile-sticky .ms-call{background:#f0f0f0;color:var(--ink);}
+  body{padding-bottom:80px;}
+}
 </style>
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-RY605RS71H"></script>
@@ -348,9 +374,9 @@ gtag('config','AW-18019764306');
 
 <!-- NAV -->
 <nav>
-  <a href="/" class="nav-brand">☕ Shahpur Jat Cafe Guide</a>
+  <span class="nav-brand">Solchemi — The Café</span>
   <div class="nav-links">
-    <a href="https://www.district.in/dining/ncr/solchemi-shahpur-jat-new-delhi" target="_blank" rel="noopener noreferrer" class="nav-book" onclick="gtag('event','district_click',{'source':'nav'});">Book a table</a>
+    <a href="https://www.district.in/dining/ncr/solchemi-shahpur-jat-new-delhi" target="_blank" rel="noopener noreferrer" class="nav-book" onclick="gtag('event','district_click',{'source':'nav'});">🗓 Book a table — 15% off</a>
   </div>
 </nav>
 
@@ -403,12 +429,6 @@ gtag('config','AW-18019764306');
     <div style="margin-top:28px;border-left:3px solid var(--green);padding:12px 20px;background:#f8f6f2;border-radius:0 8px 8px 0;">
       <p style="font-size:14px;color:var(--ink-m);line-height:1.7;margin:0;font-style:italic;">"Soul is who you are when you arrive. Alchemy is the subtle shift that happens while you're here."</p>
     </div>
-      <div class="hl"><div class="hl-icon">💻</div><div class="hl-title">Work-friendly</div><div class="hl-sub">Free WiFi · comfortable seating · long stay welcome</div></div>
-      <div class="hl"><div class="hl-icon">🎨</div><div class="hl-title">Art corner</div><div class="hl-sub">Canvas &amp; brushes available · reading nook</div></div>
-      <div class="hl"><div class="hl-icon">☕</div><div class="hl-title">Specialty coffee</div><div class="hl-sub">Espresso · iced lattes · slow-brewed teas</div></div>
-      <div class="hl"><div class="hl-icon">🍕</div><div class="hl-title">Fresh food</div><div class="hl-sub">Tortizzas · pasta · salads · hearty breakfast</div></div>
-    </div>
-
   </div>
 </div>
 
@@ -671,5 +691,11 @@ document.querySelectorAll('.nav-links a').forEach(a=>{
   a.addEventListener('click',()=>document.querySelector('.nav-links').classList.remove('open'));
 });
 </script>
+<!-- MOBILE STICKY BOTTOM BAR -->
+<div class="mobile-sticky">
+  <a href="https://www.district.in/dining/ncr/solchemi-shahpur-jat-new-delhi" target="_blank" rel="noopener noreferrer" class="ms-book" onclick="gtag('event','district_click',{'source':'mobile_sticky'});">🗓 Book a table — 15% off</a>
+  <a href="tel:+919354644586" class="ms-call" onclick="gtag('event','call_click',{'source':'mobile_sticky'});">📞 Call</a>
+</div>
+
 </body>
 </html>
