@@ -96,11 +96,11 @@ img{display:block;max-width:100%;height:auto;}
 
 /* NAV */
 nav{background:var(--ink);height:var(--nav);padding:0 24px;position:sticky;top:0;z-index:200;display:flex;align-items:center;justify-content:space-between;gap:12px;}
-.nav-brand{color:#fff;font-size:13px;font-weight:500;text-decoration:none;white-space:nowrap;}
+.nav-brand{color:rgba(255,255,255,.75);font-size:13px;font-weight:500;text-decoration:none;white-space:nowrap;border-bottom:1px solid rgba(255,255,255,.3);padding-bottom:1px;transition:color .2s,border-color .2s;}.nav-brand:hover{color:#fff;border-bottom-color:rgba(255,255,255,.7);}
 .nav-links{display:flex;gap:16px;align-items:center;}
 .nav-links a{color:rgba(255,255,255,.6);font-size:12px;text-decoration:none;white-space:nowrap;transition:color .2s;}
 .nav-links a:hover{color:#fff;}
-.nav-book{background:var(--red);color:#fff!important;padding:5px 12px;border-radius:6px;font-weight:500!important;}
+.nav-book{background:none;color:rgba(255,255,255,.55)!important;padding:5px 12px;border-radius:6px;font-weight:400!important;border:1px solid rgba(255,255,255,.2);font-size:12px;transition:color .2s,border-color .2s;}.nav-book:hover{color:#fff!important;border-color:rgba(255,255,255,.5);}
 .nav-toggle{display:none;background:none;border:none;color:#fff;font-size:22px;cursor:pointer;line-height:1;flex-shrink:0;}
 
 /* BREADCRUMB */
@@ -352,7 +352,8 @@ gtag('config','AW-18019764306');
 
 <!-- NAV -->
 <nav>
-  <span class="nav-brand">Solchemi — The Café</span>
+  <a href="https://www.google.com/maps/place/solchemi/data=!4m2!3m1!1s0x390ce39ab4f774c1:0x3bbfb7d157d1f952" target="_blank" rel="noopener" class="nav-brand">Solchemi — The Café</a>
+  <a href="https://www.district.in/dining/ncr/solchemi-shahpur-jat-new-delhi" target="_blank" rel="noopener" class="nav-book">Book a table</a>
 </nav>
 
 
